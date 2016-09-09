@@ -35,3 +35,15 @@ solutions = graph.query(query.patterns)
 
 # Add external vocabulary
 ds = RDF::Vocabulary.new("http://data.sfgov.org/resource/ays8-rxxc/")
+
+# Data GOV Trashcans
+https://catalog.data.gov/dataset?q=trashcan
+# New York
+https://data.ny.gov/api/views/cg7p-tdy5/rows.rdf?accessType=DOWNLOAD
+# San Fran
+https://data.sfgov.org/api/views/ays8-rxxc/rows.rdf?accessType=DOWNLOAD
+# Smaller foaf example
+http://ruby-rdf.github.com/rdf/etc/doap.nt
+http://greggkellogg.net/foaf
+# Broken
+http://data.sfgov.org/resource/ays8-rxxc/
