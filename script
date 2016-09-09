@@ -1,0 +1,5 @@
+# Requirements
+
+require 'rdf'
+require 'rdf/vocab'
+require 'linkeddata'
