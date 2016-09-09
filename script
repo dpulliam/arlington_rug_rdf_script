@@ -12,3 +12,15 @@ graph = RDF::Graph.new do
 end
 
 graph.dump(:ntriples)
+
+# Create a cooler graph and check some properties
+
+graph = RDF::Graph.load("https://data.sfgov.org/api/views/ays8-rxxc/rows.rdf?accessType=DOWNLOAD")
+
+
+graph.size
+graph.predicates
+graph.objects
+
+statements = graph.statements
+statements[30]
