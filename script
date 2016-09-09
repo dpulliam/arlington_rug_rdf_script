@@ -3,3 +3,12 @@
 require 'rdf'
 require 'rdf/vocab'
 require 'linkeddata'
+
+# Create a basic graph and dump it
+
+graph = RDF::Graph.new do
+  self << [:trashCan, RDF::RDFS.label,   "Trash Can"]
+  self << [:car, RDF.type,   :truck]
+end
+
+graph.dump(:ntriples)
